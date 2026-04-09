@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VV51QJ8C7L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VV51QJ8C7L');
+</script>
+
+  <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <title>Nims Hospital Navigation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <style>
+      /* --- FOOTER CREDITS STYLING (Subtle/Hidden mode) --- */
+      .dev-credit {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #666; /* Changed from #999 to #666 for darker, more visible text */
+    text-decoration: none;
+    font-weight: normal;
+    transition: all 0.2s ease;
+    padding: 0 4px;
+}
+
+      /* Only show color when someone actually hovers over it */
+      .dev-credit:hover {
+          color: #0077b5; 
+          opacity: 1;
+      }
+
+      .dev-credit svg {
+    width: 14px; /* Increased from 12px to 14px */
+    height: 14px; /* Increased from 12px to 14px */
+    fill: currentColor;
+    position: relative;
+    top: -1px; 
+}
+
+      .divider {
+          color: #ddd; /* Very faint divider */
+          margin: 0 3px;
+      }
+      
+      /* Wrapper to push it to bottom */
+      #developer-credits {
+    margin-top: 25px; 
+    padding-top: 10px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 14px; /* Increased from 11px to 14px */
+    opacity: 0.85; /* Increased from 0.6 to 0.85 */
+}
+      
+      #developer-credits:hover {
+          opacity: 1; /* Make it visible if they intentionally look at it */
+      }
+  </style>
+</head>
+<body id="top">
+<header>
+  <h1 id="app-title">Nims Hospital Hyderabad Navigation</h1>
+  <h4 id="app-subtitle">Select category → choose place → navigate</h4>
+  
+  <div id="language-selector">
+      <label id="lang-label" for="lang">Language:</label>
+      <select id="lang">
+          <option value="en">English</option>
+          <option value="te">తెలుగు</option>
+          <option value="hi">हिंदी</option>
+          <option value="ta">தமிழ்</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="ml">മലയാളം</option>
+          <option value="ur">اردو</option>
+      </select>
+  </div>
+  <div id="search-box">
+      <div style="position: relative; max-width: 500px; margin: 0 auto;">
+          <input
+              type="text"
+              id="searchInput"
+              placeholder="Search departments, facilities,utilities..."
+          />
+          <button 
+              id="clearSearch" 
+              type="button"
+              style="display: none;"
+              aria-label="Clear search"
+          >✕</button>
+      </div>
+  </div>
+ 
+  <div id="Nims-Entrance-container" style="margin: 15px 0;"></div>
+
+
+</header>
+</header> 
+<div id="hero-section" style="
+    max-width: 600px; 
+    margin: 10px auto 20px auto; 
+    padding: 0 15px; 
+    text-align: center;
+">
+    <div style="
+        position: relative;
+        border-radius: 15px; 
+        overflow: hidden; 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border: 2px solid #fff;
+    ">
+        <img 
+            src="nims hospital.jpeg" 
+            alt="Nims Hospital Hyderabad" 
+            style="
+                width: 100%; 
+                height: 200px; /* Fixed height for consistency */
+                object-fit: cover; /* Ensures image covers area without stretching */
+                display: block;
+            "
+        >
+    </div>
+</div>
+<main id="app"></main>
+
+<section id="search-results" style="display:none;">
+  <h2 id="search-title">Search Results</h2>
+  <ul id="search-list"></ul>
+</section>
+
+<a href="#top" id="back-to-top" aria-label="Back to top">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="30" x2="12" y2="5"></line>
+    <polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</a>
+
+<footer id="temple-footer">
+    <p id="footer-note" style="font-size: 13px; color: #777; text-align:center;">
+        Navigation is provided via Google Maps.
+    </p>
+
+    <p id="footer-update" style="font-size: 13px; color: #777; text-align:center;">
+        Last updated: December 2025 
+    </p>
+
+    <div id="developer-credits" style="text-align: center; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <span style="margin-right: 4px;">Developed by: </span>
+        
+        <a href="https://www.linkedin.com/in/umakanth-reddy-takkala-2a4bb82ba" target="_blank" class="dev-credit">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            Takkala Umakanth Reddy
+        </a>
+    
+        <span class="divider">|</span>
+
+        <a href="https://www.linkedin.com/in/manaswini-royya-768144302" target="_blank" class="dev-credit">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            Royya Manaswini
+        </a>
+
+    </div>
+</footer>
+
+<script src="app-backup.js"></script>
+
+</body>
+</html>
