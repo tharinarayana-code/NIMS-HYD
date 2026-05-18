@@ -108,11 +108,13 @@ header > p {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3), 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 /* ================= NIMS ENTRANCE COUNTER ================= */
-#Nims-Entrance-container {
+#Nims-Entrance-container,
+#Opd-Entrance-container {
   margin: 20px 0 0 0;
 }
 
-#Nims-Entrance-container button {
+#Nims-Entrance-container button, 
+#Opd-Entrance-container button{
   background-color: #fff;
   color: #2A7FFF;
   border: 3px solid #2A7FFF;
@@ -127,14 +129,17 @@ header > p {
   letter-spacing: 0.5px;
 }
 
-#Nims-Entrance-container button:hover {
+#Nims-Entrance-container button:hover,
+#Opd-Entrance-container button:hover {
   background-color: #2A7FFF;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(42, 127, 255, 0.3);
 }
 
-#Nims-Entrance-container button:active {
+#Nims-Entrance-container button:active, 
+#Opd-Entrance-container button:active
+{
   transform: translateY(0);
 }
 
@@ -592,5 +597,3 @@ section h2 img {
 #searchInput {
   padding-right: 48px !important;
 }
-
-
